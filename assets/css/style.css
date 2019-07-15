@@ -20,7 +20,7 @@ html {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
     url(../images/clement-h-95YRwf6CNw8-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -36,11 +36,51 @@ header {
 }
 
 h1 {
-  margin: 0;
   color: #fff;
   font-size: 240%;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 4px;
+  margin: 0 0 20px;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #c0392b;
+  border: 1px solid #c0392b;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #c0392b;
+  color: #c0392b;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #a43125;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #a43125;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #a43125;
+  color: #fff;
 }
