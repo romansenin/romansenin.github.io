@@ -43,7 +43,18 @@ h1 {
 }
 
 h2 {
-  font-size: 150%;
+  font-size: 180%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2::after {
+  display: block;
+  height: 2px;
+  content: "";
+  background-color: #c0392b;
+  width: 100px;
+  margin: 18px auto 0;
 }
 
 /* ------ BUTTONS ------ */
@@ -110,20 +121,6 @@ header {
 
 .portfolio {
   padding-top: 50px;
-}
-
-.portfolio h2 {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.portfolio h2::after {
-  display: block;
-  content: "";
-  height: 2px;
-  background-color: #c0392b;
-  width: 20%;
-  margin: 15px 0 0 40%;
 }
 
 .projects-showcase {
