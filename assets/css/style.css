@@ -18,6 +18,15 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1}
+.clearfix::after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /* ------------------------- */
 /* REUSABLE COMPONENTS */
 /* ------------------------- */
@@ -124,7 +133,6 @@ header {
 }
 
 .projects-showcase {
-  clear: both;
   list-style: none;
   width: 100%;
 }
