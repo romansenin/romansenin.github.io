@@ -96,3 +96,33 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* ------------------------- */
+/* PORTFOLIO */
+/* ------------------------- */
+
+.portfolio {
+  padding: 0;
+}
+
+.projects-showcase {
+  clear: both;
+  list-style: none;
+  width: 100%;
+}
+
+.projects-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.projects-showcase figure {
+  width: 100%;
+  margin: 0;
+}
+
+.projects-showcase img {
+  width: 100%;
+  height: auto;
+}
