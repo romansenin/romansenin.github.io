@@ -29,14 +29,21 @@ html {
 
 /* ------ HEADINGS ------ */
 
+h1, h2 {
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  text-transform: uppercase;
+}
+
 h1 {
   color: #fff;
   font-size: 240%;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  word-spacing: 4px;
   margin: 0 0 20px;
+}
+
+h2 {
+  font-size: 150%;
 }
 
 /* ------ BUTTONS ------ */
@@ -102,7 +109,21 @@ header {
 /* ------------------------- */
 
 .portfolio {
-  padding: 0;
+  padding-top: 50px;
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portfolio h2::after {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: #c0392b;
+  width: 20%;
+  margin: 15px 0 0 40%;
 }
 
 .projects-showcase {
@@ -120,9 +141,19 @@ header {
 .projects-showcase figure {
   width: 100%;
   margin: 0;
+  background-color: #000;
+  overflow: hidden;
 }
 
 .projects-showcase img {
+  opacity: 0.6;
   width: 100%;
   height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.projects-showcase img:hover {
+  transform: scale(1.03);
+  opacity: 1;
 }
