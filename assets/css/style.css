@@ -38,6 +38,19 @@ html {
   margin: 0 auto;
 }
 
+.row {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
 section {
   padding: 80px 0;
 }
@@ -45,7 +58,8 @@ section {
 /* ------ HEADINGS ------ */
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: 300;
   letter-spacing: 1px;
   word-spacing: 4px;
@@ -71,6 +85,12 @@ h2::after {
   background-color: #c0392b;
   width: 100px;
   margin: 18px auto 0;
+}
+
+h3 {
+  font-size: 140%;
+  margin-bottom: 25px;
+  width: 80%;
 }
 
 /* ------ BUTTONS ------ */
@@ -120,6 +140,7 @@ header {
     url(../images/hero-image-min.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -172,36 +193,48 @@ header {
 /* ABOUT ME */
 /* ------------------------- */
 
+/* Bio */
+
+.bio {
+  background: linear-gradient(to bottom right, #f9f9f9, white);
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgb(238, 238, 238);
+  margin-bottom: 30px;
+}
+
 .about-text {
+  margin-top: 8px;
   line-height: 145%;
   font-size: 130%;
-  width: 70%;
-  margin-left: 15%;
 }
+
+/* Skills */
 
 .skills-showcase {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
+  background: linear-gradient(to bottom right, #f9f9f9, white);
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgb(238, 238, 238);
 }
 
-.skills-showcase .skill {
+.skills-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.skills-wrapper:last-child {
+  margin-bottom: 0;
 }
 
 .skills-showcase .skill img {
   display: block;
-  height: 100px;
-  margin-bottom: 10px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 1px solid #c1b0ae;
 }
-
-.skills-showcase .skill p {
-  font-size: 120%;
-  font-weight: 500;
-}
-
 
 /* ------------------------- */
 /* PORTFOLIO */
