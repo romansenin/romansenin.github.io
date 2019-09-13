@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <meta name="description" content="Roman Senin's personal portfolio website." />
+    <meta
+      name="description"
+      content="Roman Senin's personal portfolio website."
+    />
 
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/Grid.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap"
@@ -19,15 +23,53 @@
   </head>
   <body>
     <header>
+      <nav>
+        <div class="row">
+          <ul class="main-nav">
+            <li class="main-nav__link">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="main-nav__link">
+              <a href="#about-me">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div class="hero-text-box">
-        <h1>Roman Senin</h1>
         <h1>Full Stack Web Developer</h1>
-        <a class="btn btn-full" href="#">See Portfolio</a>
-        <a class="btn btn-ghost" href="#">About Me</a>
+        <a class="btn btn-full" href="#portfolio">See Portfolio</a>
+        <a class="btn btn-ghost" href="#about-me">About Me</a>
       </div>
     </header>
 
-    <section class="portfolio">
+    <section class="about-me" id="about-me">
+      <h2>About Me</h2>
+      <div class="row">
+        <p class="about-text">
+          I'm a Computer Scientist specializing in Full Stack Web Development.
+          My background in CS and hands-on experience with web development are a
+          powerful combination for creating responsive, great-looking, and
+          functional web applications.
+        </p>
+      </div>
+
+      <div class="row skills-showcase">
+        <div class="skill">
+          <i class="fab fa-html5"></i>
+          <p>HTML5</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS3</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-js-square"></i>
+          <p>Javascript</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
       <h2>Portfolio</h2>
       <ul class="projects-showcase clearfix">
         <li>
@@ -198,5 +240,12 @@
         </li>
       </ul>
     </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/javascript/script.js"></script>
   </body>
 </html>
