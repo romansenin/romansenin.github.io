@@ -180,12 +180,26 @@ header {
 }
 
 .skills-showcase {
+  margin-top: 50px;
   display: flex;
+  justify-content: space-between;
 }
 
-.skill img {
+.skills-showcase .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-showcase .skill img {
   display: block;
-  height: 150px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.skills-showcase .skill p {
+  font-size: 120%;
+  font-weight: 500;
 }
 
 
@@ -194,7 +208,7 @@ header {
 /* ------------------------- */
 
 .portfolio {
-  background-color: #e0e0e0;
+  background-color: #f4f4f4;
 }
 
 .projects-showcase {
