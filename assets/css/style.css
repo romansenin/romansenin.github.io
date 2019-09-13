@@ -183,9 +183,11 @@ header {
   display: flex;
 }
 
-.skills-showcase i {
-  font-size: 500%;
+.skill img {
+  display: block;
+  height: 150px;
 }
+
 
 /* ------------------------- */
 /* PORTFOLIO */
