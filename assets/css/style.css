@@ -156,7 +156,7 @@ header {
 
 /* Card */
 .card {
-  background: linear-gradient(to bottom right, #f9f9f9, white);
+  background: linear-gradient(to bottom right, #ececec, white);
   border-radius: 5px;
   box-shadow: 0 5px 5px rgb(238, 238, 238);
 }
