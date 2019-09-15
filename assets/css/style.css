@@ -89,8 +89,10 @@ h2::after {
 
 h3 {
   font-size: 140%;
-  margin-bottom: 25px;
-  width: 80%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(227, 227, 227);
+  max-width: 1140px;
+  margin: 0 auto 15px;
 }
 
 /* ------ BUTTONS ------ */
@@ -152,6 +154,13 @@ header {
   transform: translate(-50%, -50%);
 }
 
+/* Card */
+.card {
+  background: linear-gradient(to bottom right, #f9f9f9, white);
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgb(238, 238, 238);
+}
+
 /* Main navigation */
 .main-nav {
   display: flex;
@@ -193,14 +202,30 @@ header {
 /* ABOUT ME */
 /* ------------------------- */
 
-/* Bio */
+/** Bio **/
 
 .bio {
-  background: linear-gradient(to bottom right, #f9f9f9, white);
+  display: flex;
+  align-items: center;
   padding: 50px;
-  border-radius: 5px;
-  box-shadow: 0 5px 5px rgb(238, 238, 238);
   margin-bottom: 30px;
+}
+
+.bio figure {
+  border-right: 1px solid #e9e9e9;
+  padding-right: 20px;
+}
+
+.bio figure img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: 0 25%;
+  border-radius: 50%;
+}
+
+.bio__text {
+  padding-left: 20px;
 }
 
 .about-text {
@@ -209,13 +234,10 @@ header {
   font-size: 130%;
 }
 
-/* Skills */
+/** Skills **/
 
 .skills-showcase {
-  background: linear-gradient(to bottom right, #f9f9f9, white);
   padding: 50px;
-  border-radius: 5px;
-  box-shadow: 0 5px 5px rgb(238, 238, 238);
 }
 
 .skills-wrapper {
