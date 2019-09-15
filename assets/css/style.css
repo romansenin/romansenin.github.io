@@ -38,7 +38,7 @@ html {
 }
 
 section {
-  padding: 80px 0;
+  padding: 70px 0;
 }
 
 /* ------ HEADINGS ------ */
@@ -263,12 +263,15 @@ header {
 .projects-showcase li {
   display: block;
   flex: 1 1 32.66%;
-  margin-right: 1%;
 }
 
 .projects-showcase li:nth-child(3n + 3),
 .projects-showcase li:last-child {
   margin-right: 0;
+}
+
+.projects-showcase li:nth-child(2n + 1) {
+  background-color: rgb(231, 231, 231);
 }
 
 .projects-showcase figure {
@@ -284,8 +287,12 @@ header {
 }
 
 .project-info .project-title {
-  font-size: 115%;
+  font-size: 110%;
   margin-bottom: 5px;
+}
+
+.project-info .project-description {
+  font-size: 95%;
 }
 
 .projects-showcase img {
