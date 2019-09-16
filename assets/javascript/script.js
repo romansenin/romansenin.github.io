@@ -13,4 +13,12 @@ $(document).ready(function() {
       1000
     );
   });
+
+  // $(".email").hover(function() {
+  //   $(".email-1").hide();
+  //   $(".email-2").show();
+  // }, function() {
+  //   $(".email-1").show();
+  //   $(".email-2").hide();
+  // });
 });

@@ -262,7 +262,7 @@ header {
 
 .projects-showcase li {
   display: block;
-  flex: 1 1 32.66%;
+  flex: 1 1 33.33%;
 }
 
 .projects-showcase li:nth-child(3n + 3),
@@ -340,4 +340,66 @@ header {
 .projects-showcase .links a:last-child i {
   color: #128cc0;
   margin-right: 0;
+}
+
+/* ------------------------- */
+/* CONTACT */
+/* ------------------------- */
+
+.contact {
+  padding: 50px;
+}
+
+.contact .email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.email .email-icon {
+  border-radius: 50%;
+  background-color: #c0392b;
+  padding: 25px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.email .email-icon i {
+  font-size: 200%;
+  color: white;
+}
+
+.email .email-2 {
+  display: none;
+}
+
+.email-icon:hover {
+  background-color: #a43125;
+}
+
+.email-icon:hover .email-1 {
+  display: none;
+}
+
+.email-icon:hover .email-2 {
+  display: block;
+}
+
+.email p {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.contact .phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .phone i {
+  margin-right: 10px;
 }
