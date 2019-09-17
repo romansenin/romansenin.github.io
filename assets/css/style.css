@@ -11,11 +11,12 @@
 /* Base color: */
 /* #c0392b */
 
-html {
+body {
   color: #555;
   font-family: "Lato", "Arial", "sans-serif";
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 /* ------------------------- */
@@ -180,7 +181,8 @@ header {
   transition: width 0.5s;
 }
 
-.main-nav li a:hover::after {
+.main-nav li a:hover::after,
+.main-nav li a:active::after {
   width: 100%;
 }
 
@@ -223,7 +225,9 @@ header {
 .bio__text .social-links li {
   height: 50px;
   width: 50px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 150%;
   padding: 10px;
   border-radius: 50%;
@@ -238,18 +242,22 @@ header {
   color: rgb(117, 117, 117);
 }
 
-.bio__text .linkedin:hover {
+.bio__text .linkedin:hover,
+.bio__text .linkedin:active {
   background-color: #0077b5;
   border: 1px solid #0077b5;
 }
 
-.bio__text .github:hover {
+.bio__text .github:hover,
+.bio__text .github:active {
   background-color: #4078c0;
   border: 1px solid #4078c0;
 }
 
 .bio__text .linkedin:hover i,
-.bio__text .github:hover i {
+.bio__text .linkedin:active i,
+.bio__text .github:hover i,
+.bio__text .github:active i {
   color: white;
 }
 
@@ -313,11 +321,11 @@ header {
 }
 
 .projects-showcase li:nth-child(2n) {
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(255, 255, 255);
 }
 
 .projects-showcase li:nth-child(2n + 1) {
-  background-color: rgb(216, 216, 216);
+  background-color: rgb(236, 236, 236);
 }
 
 .projects-showcase figure {
@@ -355,36 +363,58 @@ header {
 
 .projects-showcase .links {
   position: absolute;
-  bottom: -5%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.5s;
-  background-color: rgba(41, 40, 58, 0.8);
   padding: 8px;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects-showcase li:hover .links {
   opacity: 1;
 }
 
+.projects-showcase .links div {
+  background-color: #c0392b;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 8px rgb(56, 56, 56);
+  transition: background-color 0.2s;
+}
+
+.projects-showcase .links div:hover,
+.projects-showcase .links div:active {
+  background-color: #a43125;
+}
+
 .projects-showcase .links a {
-  cursor: default;
+  text-decoration: none;
+}
+
+.projects-showcase .links a:first-child {
+  margin-right: 5px;
 }
 
 .projects-showcase .links a i {
   font-size: 150%;
-  margin-right: 10px;
   cursor: pointer;
 }
 
 .projects-showcase .links a:first-child i {
-  color: #5ecfff;
+  color: white;
 }
 
 .projects-showcase .links a:last-child i {
-  color: #128cc0;
+  color: white;
   margin-right: 0;
 }
 
@@ -423,15 +453,18 @@ header {
   display: none;
 }
 
-.email-icon:hover {
+.email-icon:hover,
+.email-icon:active {
   background-color: #a43125;
 }
 
-.email-icon:hover .email-1 {
+.email-icon:hover .email-1,
+.email-icon:active .email-1 {
   display: none;
 }
 
-.email-icon:hover .email-2 {
+.email-icon:hover .email-2,
+.email-icon:active .email-2 {
   display: block;
 }
 
@@ -466,7 +499,8 @@ header {
   font-weight: 500;
 }
 
-.phone-icon:hover {
+.phone-icon:hover,
+.phone-icon:active {
   background-color: #a43125;
   transform: rotate(10deg);
 }
@@ -505,10 +539,12 @@ footer .social-links i {
   transition: color 0.2s;
 }
 
-footer .linkedin:hover i {
- color: #0077b5;
+footer .linkedin:hover i,
+footer .linkedin:active i {
+  color: #0077b5;
 }
 
-footer .github:hover i {
+footer .github:hover i,
+footer .github:active i {
   color: #4078c0;
 }
