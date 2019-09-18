@@ -1,6 +1,14 @@
 $(document).ready(function() {
   $(".main-nav__brand").addClass("animated fadeInDown");
 
+  // Sticky navbar toggle
+  $(".js--about-me").waypoint(function(direction) {
+    if (direction === "down") $("nav").addClass("sticky");
+    else $("nav").removeClass("sticky");
+  }, {
+    offset: "65px"
+  });
+
   // Navigation smooth scrolling
 
   $(document).on("click", 'a[href^="#"]', function(event) {
@@ -14,10 +22,6 @@ $(document).ready(function() {
     );
   });
 
-  $("a").click(function() {
-    $(this).removeClass("hasactive");
-  });
-
   // Tooltipster
   $(".tooltip").tooltipster({
     animation: "fade",
@@ -25,4 +29,7 @@ $(document).ready(function() {
     theme: "tooltipster-punk",
     trigger: "click"
   });
+
+  // Animations on scroll
+  
 });

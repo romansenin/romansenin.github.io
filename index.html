@@ -36,10 +36,13 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header id="home">
       <nav>
         <div class="row">
           <ul class="main-nav">
+            <li class="main-nav__link first-link">
+              <a href="#home">Home</a>
+            </li>
             <li class="main-nav__link">
               <a href="#portfolio">Portfolio</a>
             </li>
@@ -70,9 +73,9 @@
       </div>
     </header>
 
-    <section class="about-me" id="about-me">
+    <section class="about-me js--about-me" id="about-me">
       <h2>About Me</h2>
-      <div class="row bio card">
+      <div class="row bio card js--wp-1">
         <figure>
           <img src="./assets/images/profile-pic.png" alt="Roman Senin" />
         </figure>
@@ -457,7 +460,7 @@
               <i class="fas fa-phone"></i>
             </div>
           </a>
-          <p>(916) 582-9682</p>
+          <p>Phone: (916) 582-9682</p>
         </div>
       </div>
     </section>
@@ -482,7 +485,8 @@
       </div>
     </footer>
 
-    <script src="./assets/javascript/script.js"></script>
+    <script src="assets/javascript/jquery.waypoints.min.js"></script>
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <script src="./assets/javascript/script.js"></script>
   </body>
 </html>
