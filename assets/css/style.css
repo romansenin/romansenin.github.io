@@ -284,6 +284,16 @@ header {
   margin-bottom: 0;
 }
 
+.skills-showcase .skill {
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.skills-showcase .skill:hover,
+.skills-showcase .skill:active {
+  transform: scale(1.15);
+}
+
 .skills-showcase .skill img {
   display: block;
   height: 70px;

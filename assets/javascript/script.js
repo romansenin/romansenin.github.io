@@ -14,11 +14,15 @@ $(document).ready(function() {
     );
   });
 
-  // $(".email").hover(function() {
-  //   $(".email-1").hide();
-  //   $(".email-2").show();
-  // }, function() {
-  //   $(".email-1").show();
-  //   $(".email-2").hide();
-  // });
+  $("a").click(function() {
+    $(this).removeClass("hasactive");
+  });
+
+  // Tooltipster
+  $(".tooltip").tooltipster({
+    animation: "fade",
+    delay: 100,
+    theme: "tooltipster-punk",
+    trigger: "click"
+  });
 });

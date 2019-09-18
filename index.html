@@ -15,11 +15,25 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/queries.css" />
     <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/tooltipster-master/dist/css/tooltipster.bundle.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap"
       rel="stylesheet"
     />
     <title>Roman Senin</title>
     <script src="https://kit.fontawesome.com/c44ebff2d6.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/tooltipster-master/dist/js/tooltipster.bundle.min.js"
+    ></script>
   </head>
   <body>
     <header>
@@ -39,7 +53,18 @@
         </div>
       </nav>
       <div class="hero-text-box">
-        <h1>Roman Senin | Full Stack Web Developer</h1>
+        <h1>
+          Roman Senin |
+          <span
+            class="typer"
+            id="main"
+            data-words="Computer Scientist,Full Stack Web Developer"
+            data-delay="100"
+            data-deleteDelay="1000"
+            data-colors="white"
+          ></span>
+          <span class="cursor" data-owner="main"></span>
+        </h1>
         <a class="btn btn-full" href="#portfolio">See Portfolio</a>
         <a class="btn btn-ghost" href="#about-me">About Me</a>
       </div>
@@ -77,39 +102,39 @@
       <h3>Skills</h3>
       <div class="row skills-showcase card">
         <div class="skills-wrapper">
-          <div class="skill">
+          <div class="skill tooltip" title="HTML5">
             <img src="./assets/images/html5-min.png" alt="HTML5" />
           </div>
-          <div class="skill">
+          <div class="skill tooltip" title="CSS3">
             <img src="./assets/images/css3-min.png" alt="CSS3" />
           </div>
-          <div class="skill">
+          <div class="skill tooltip" title="JavaScipt">
             <img src="./assets/images/javascript-min.png" alt="Javascript" />
           </div>
-          <div class="skill">
+          <div class="skill tooltip" title="jQuery">
             <img src="./assets/images/jquery-min.png" alt="jQuery" />
           </div>
-          <div class="skill">
+          <div class="skill tooltip" title="React">
             <img src="./assets/images/react-min.png" alt="React Js" />
           </div>
         </div>
         <div class="skills-wrapper">
-          <div class="skill">
+          <div class="skill tooltip" title="Node">
             <img src="./assets/images/nodejs-min.png" alt="Node Js" />
           </div>
-          <div class="skill">
+          <div class="skill tooltip" title="Python">
             <img src="./assets/images/python-min.png" alt="Python" />
           </div>
-          <div class="skill">
+          <div class="skill tooltip" title="C++">
             <img src="./assets/images/cplusplus-min.png" alt="C++" />
           </div>
-          <div class="skill">
+          <div class="skill tooltip" title="Express Js">
             <img src="./assets/images/express-min.png" alt="Express Js" />
           </div>
-          <div class="skill">
+          <div class="skill tooltip" title="MySQL">
             <img src="./assets/images/my-sql-min.png" alt="MySQL" />
           </div>
-          <div class="skill">
+          <div class="skill tooltip" title="MongoDB">
             <img src="./assets/images/mongodb-min.png" alt="MongoDB" />
           </div>
         </div>
@@ -457,11 +482,7 @@
       </div>
     </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
     <script src="./assets/javascript/script.js"></script>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
   </body>
 </html>
