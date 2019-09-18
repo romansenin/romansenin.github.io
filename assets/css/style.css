@@ -387,7 +387,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 1px 8px rgb(56, 56, 56);
+  box-shadow: 0 1px 5px rgb(57, 57, 57);
   transition: background-color 0.2s;
 }
 
@@ -405,7 +405,7 @@ header {
 }
 
 .projects-showcase .links a i {
-  font-size: 150%;
+  font-size: 130%;
   cursor: pointer;
 }
 
@@ -444,7 +444,8 @@ header {
   margin-bottom: 15px;
 }
 
-.email .email-icon i {
+.email .email-icon i,
+.phone .phone-icon i {
   font-size: 200%;
   color: white;
 }
@@ -488,11 +489,6 @@ header {
   transition: background-color 0.2s, transform 0.2s;
   cursor: pointer;
   margin-bottom: 15px;
-}
-
-.phone .phone-icon i {
-  font-size: 200%;
-  color: white;
 }
 
 .phone p {
