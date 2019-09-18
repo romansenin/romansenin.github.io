@@ -23,6 +23,49 @@
     font-size: 15px;
   }
 
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    font-size: 100%;
+  }
+
+  .main-nav li a::after {
+    border: none;
+  }
+
+  .mobile-nav-icon {
+    display: block;
+  }
+  
+  .sticky .row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .sticky .main-nav {
+    margin-top: 8px;
+    padding: 0;
+  }
+
+  .sticky .mobile-nav-icon {
+    margin-top: 0;
+  }
+
+  .sticky .mobile-nav-icon i {
+    color: #555;
+  }
+
   h1 {
     font-size: 3.8vw;
   }
@@ -100,10 +143,6 @@
 
 /* Mobile */
 @media screen and (max-width: 500px) {
-  .main-nav {
-    display: none;
-  }
-
   .hero-text-box {
     text-align: center;
   }
@@ -207,11 +246,7 @@
 
   .contact .email {
     border-bottom: 1px solid #d1d1d1;
-    padding-bottom: 35px;
-  }
-
-  .email .email-icon {
-    padding: 18px;
+    padding-bottom: 40px;
   }
 
   .email .email-icon i,
@@ -219,27 +254,8 @@
     font-size: 180%;
   }
 
-  .email p,
-  .phone p {
-    font-size: 90%;
-  }
-
-  .contact .phone {
-    margin-top: 40px;
-  }
-
-  .phone .phone-icon {
-    padding: 22px;
-  }
-
   .footer-content {
-    display: flex;
     flex-direction: column;
-  }
-
-  footer .social-links {
-    margin-left: 0;
-    align-self: flex-end;
   }
 
   footer p {
