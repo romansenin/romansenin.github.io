@@ -262,6 +262,7 @@ nav .row {
 
 .bio__text {
   padding-left: 20px;
+  font-size: 115%;
 }
 
 .bio__text .social-links {
@@ -275,7 +276,7 @@ nav .row {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 150%;
+  font-size: 140%;
   padding: 10px;
   border-radius: 50%;
   border: 1px solid #b6b6b6;
@@ -311,7 +312,7 @@ nav .row {
 .about-text {
   margin-top: 8px;
   line-height: 145%;
-  font-size: 120%;
+  font-size: 115%;
 }
 
 /** Skills **/

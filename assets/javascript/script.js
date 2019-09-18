@@ -30,11 +30,20 @@ $(document).ready(function() {
       $(".js--main-nav").slideToggle();
       $(".js--nav-icon i").addClass("fa-bars");
       $(".js--nav-icon i").removeClass("fa-times");
-    } else if ($(window).width() < 979) {
-      $(".js--main-nav").hide();
-      $(".js--nav-icon i").addClass("fa-bars");
-      $(".js--nav-icon i").removeClass("fa-times");
     }
+  });
+
+  $(function() {
+    $("body").click(function(e) {
+      if (e.target.id == "js--nav" || $(e.target).parents("nav").length) {
+      } else {
+        if ($(window).width() < 979) {
+          $(".js--main-nav").hide({});
+          $(".js--nav-icon i").addClass("fa-bars");
+          $(".js--nav-icon i").removeClass("fa-times");
+        }
+      }
+    });
   });
 
   // Tooltipster
@@ -67,7 +76,7 @@ $(document).ready(function() {
       $(".js--wp-2").addClass("animated bounceInRight");
     },
     {
-      offset: "72%"
+      offset: "60%"
     }
   );
 
@@ -76,7 +85,7 @@ $(document).ready(function() {
       $(".js--wp-3").addClass("animated fadeIn");
     },
     {
-      offset: "70%"
+      offset: "60%"
     }
   );
 
@@ -85,7 +94,7 @@ $(document).ready(function() {
       $(".js--wp-4").addClass("animated pulse");
     },
     {
-      offset: "70%"
+      offset: "60%"
     }
   );
 
