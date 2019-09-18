@@ -588,3 +588,15 @@ footer .github:hover i,
 footer .github:active i {
   color: #4078c0;
 }
+
+/* ------------------------- */
+/* Animations */
+/* ------------------------- */
+
+.to-animate {
+  opacity: 0;
+}
+
+.to-animate.animated {
+  opacity: 1;
+}
