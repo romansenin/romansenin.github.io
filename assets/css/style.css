@@ -315,6 +315,10 @@ nav .row {
   font-size: 115%;
 }
 
+.about-text a {
+  text-decoration: none;
+}
+
 /** Skills **/
 
 .skills-showcase {
