@@ -33,19 +33,6 @@ $(document).ready(function() {
     }
   });
 
-  $(function() {
-    $("body").click(function(e) {
-      if (e.target.id == "js--nav" || $(e.target).parents("nav").length) {
-      } else {
-        if ($(window).width() < 979) {
-          $(".js--main-nav").hide({});
-          $(".js--nav-icon i").addClass("fa-bars");
-          $(".js--nav-icon i").removeClass("fa-times");
-        }
-      }
-    });
-  });
-
   // Tooltipster
   $(".tooltip-click").tooltipster({
     animation: "fade",
