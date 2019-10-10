@@ -28,7 +28,10 @@
   }
 
   .main-nav {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
@@ -75,7 +78,9 @@
   }
 
   .projects-showcase li {
-    flex: 1 1 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
     position: relative;
   }
 
@@ -84,11 +89,13 @@
   }
 
   .projects-showcase img {
+    -webkit-transition: none;
     transition: none;
   }
 
   .projects-showcase li:hover img {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
   }
 
@@ -106,7 +113,8 @@
     height: 40px;
     width: 60px;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgb(174, 174, 174);
+    -webkit-box-shadow: 2px 2px 5px rgb(174, 174, 174);
+            box-shadow: 2px 2px 5px rgb(174, 174, 174);
   }
 
   .projects-showcase .links a:first-child {
@@ -169,7 +177,10 @@
   }
 
   .bio {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -193,22 +204,38 @@
   }
 
   .bio__text .social-links {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .skills-wrapper {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 0;
   }
 
   .skills-showcase {
     padding-top: 30px;
     padding-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .skills-showcase .skill {
@@ -221,9 +248,12 @@
   }
 
   .projects-showcase li {
-    flex: 1 1 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
     margin-bottom: 20px;
-    box-shadow: 2px 2px 8px #b6b6b6;
+    -webkit-box-shadow: 2px 2px 8px #b6b6b6;
+            box-shadow: 2px 2px 8px #b6b6b6;
   }
 
   .projects-showcase li:last-child {
@@ -235,7 +265,8 @@
   }
 
   .projects-showcase .links div {
-    box-shadow: 2px 2px 5px rgb(174, 174, 174);
+    -webkit-box-shadow: 2px 2px 5px rgb(174, 174, 174);
+            box-shadow: 2px 2px 5px rgb(174, 174, 174);
   }
 
   .contact {
@@ -254,11 +285,15 @@
   }
 
   .footer-content {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   footer p {
     margin-bottom: 20px;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
