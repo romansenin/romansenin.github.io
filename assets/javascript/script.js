@@ -102,4 +102,22 @@ $(document).ready(function () {
   });
 
   $("#year").text(new Date().getFullYear());
+
+  const experienceEntries = [
+    [new Date('2019-10-14'), new Date('2020-04-14')],
+    [new Date('2020-12-14'), new Date('2022-07-14')],
+    [new Date('2023-03-14'), new Date()],
+  ]
+
+  function getYearsDifference(date1, date2) {
+    const msPerYear = 1000 * 60 * 60 * 24 * 365.25; // includes leap years
+    return Math.abs((date2 - date1) / msPerYear);
+  }
+
+  const totalYears = experienceEntries.reduce(
+    (a, b) => a + getYearsDifference(b[0], b[1]),
+    0
+  );
+
+  $("#experience").text(totalYears.toFixed(1));
 });
